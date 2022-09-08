@@ -1,0 +1,88 @@
+@import "../css/variable";
+@import "../css/mixin";
+@import "../css/nav";
+@import "../css/sub-header";
+@import "../css/footer";
+@import "../css/media";
+h1 {
+  @include h1(36px);
+}
+
+p {
+  color: #777;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.blog-content {
+  @include section-container(80%, 60px);
+  width: 80%;
+  margin: auto;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 60px;
+  text-align: left;
+  .row {
+    @include row-css;
+    .blog-left {
+      flex-basis: 65%;
+      img {
+        width: 100%;
+      }
+      h2 {
+        color: #222;
+        font-weight: 600;
+        margin: 30px 0;
+      }
+      p {
+        color: #999;
+        padding: 0;
+      }
+      .comment-box {
+        border: 1px solid #ccc;
+        margin: 50px 0;
+        padding: 10px 20px;
+        .hero-btn {
+          margin: 10px 0;
+          @include hero-btn($primary-color);
+        }
+        h3 {
+          text-align: left;
+        }
+        .comment-form {
+          input,
+          textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 20px 0;
+            box-sizing: border-box;
+            border: none;
+            outline: none;
+            background: #f0f0f0;
+          }
+        }
+      }
+    }
+    .blog-right {
+      flex-basis: 32%;
+      h3 {
+        background-color: $primary-color;
+        color: $main-color;
+        text-align: center;
+        padding: 7px 0;
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #555;
+        padding: 8px;
+        box-sizing: border-box;
+      }
+    }
+  }
+}

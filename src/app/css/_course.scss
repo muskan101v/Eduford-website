@@ -1,0 +1,22 @@
+.courses {
+  @include section-container(80%, 100px);
+  .row {
+    @include row-css;
+    .course-col {
+      flex-basis: 31%;
+      background: $secondary-color;
+      border-radius: 10px;
+      margin-bottom: 5%;
+      padding: 10px 12px;
+      box-sizing: border-box;
+      h3 {
+        text-align: center;
+        font-weight: 600;
+        margin: 10px 0;
+      }
+      &:hover {
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+}

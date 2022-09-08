@@ -1,0 +1,21 @@
+@import "../css/variable";
+@import "../css/mixin";
+@import "../css/header";
+@import "../css/course";
+@import "../css/campus";
+@import "../css/facilities";
+@import "../css/testimonials";
+@import "../css/cta";
+@import "../css/footer";
+@import "../css/media";
+h1 {
+  @include h1(36px);
+}
+
+p {
+  color: #777;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}

@@ -1,0 +1,43 @@
+@import "../css/variable";
+@import "../css/mixin";
+@import "../css/media";
+@import "../css/nav";
+@import "../css/sub-header";
+@import "../css/footer";
+
+.about-us {
+  @include section-container(80%, 80px);
+  margin-bottom: 50px;
+  .row {
+    @include row-css;
+    .about-col {
+      flex-basis: 48%;
+      padding: 30px 2px;
+      text-align: left;
+      img {
+        width: 100%;
+      }
+      h1 {
+        padding-top: 0;
+      }
+      p {
+        padding: 15px 0 25px;
+      }
+      .hero-btn {
+        @include hero-btn($primary-color);
+      }
+    }
+  }
+}
+
+h1 {
+  @include h1(36px);
+}
+
+p {
+  color: #777;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}

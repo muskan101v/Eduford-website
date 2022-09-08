@@ -1,0 +1,16 @@
+.sub-header {
+  height: 50vh;
+  width: 100%;
+  @include background-image(
+    "../../assets/images/background.jpg",
+    4,
+    9,
+    30,
+    0.7
+  );
+  text-align: center;
+  color: $main-color;
+  h1 {
+    margin-top: 100px;
+  }
+}

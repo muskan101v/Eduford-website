@@ -1,0 +1,66 @@
+@media (max-width: 700px) {
+  .header {
+    .text-box h1 {
+      @include h1(20px);
+    }
+  }
+  nav {
+    .nav-links {
+      position: absolute;
+      background: $primary-color;
+      height: 100vh;
+      width: 200px;
+      top: 0;
+      right: -200px;
+      z-index: 2;
+      transition: 1s;
+      ul {
+        text-align: left;
+        padding: 30px;
+        li {
+          display: block !important;
+        }
+      }
+    }
+    .fa {
+      display: block !important;
+      color: $main-color;
+      font-size: 22px;
+      margin: 10px;
+      cursor: pointer;
+      text-align: left;
+    }
+  }
+
+  .courses .row {
+    @include row-media;
+  }
+  .campus .row {
+    @include row-media;
+  }
+  .facilities .row {
+    @include row-media;
+  }
+  .testimonials .row {
+    @include row-media;
+  }
+  .about-us .row {
+    @include row-media;
+  }
+  .blog-content .row {
+    @include row-media;
+  }
+  .testimonial-col img {
+    margin-left: 0px !important;
+    margin-right: 15px !important;
+  }
+  h1 {
+    @include h1(24px);
+  }
+
+  .sub-header {
+    h1 {
+      @include h1(24px);
+    }
+  }
+}

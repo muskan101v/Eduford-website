@@ -1,0 +1,16 @@
+.cta {
+  margin: 100px auto;
+  width: 80%;
+  @include background-image("../../assets/images/banner2.jpg", 0, 0, 0, 0.7);
+  border-radius: 10px;
+  text-align: center;
+  padding: 100px 0px;
+  h1 {
+    margin-bottom: 40px;
+    color: $main-color;
+    padding: 0px;
+  }
+  .hero-btn {
+    @include hero-btn($main-color);
+  }
+}
